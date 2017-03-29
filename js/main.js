@@ -1,3 +1,7 @@
+$(function () {
+    $('#search-date').datetimepicker();
+});
+
 var autocomplete = new google.maps.places.Autocomplete((document.getElementById('search-location')), {
 	types: ['(cities)']
 });
