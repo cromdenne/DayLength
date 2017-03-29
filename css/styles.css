@@ -78,9 +78,9 @@ a {  }
 	margin-bottom: 50px;
 }
 
-.title-location {  }
+#title-location {  }
 
-.title-coordinates, .title-date {
+#title-coordinates, #title-date {
 	opacity: 0.5;
 }
 

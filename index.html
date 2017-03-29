@@ -37,13 +37,13 @@
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
                 <div class="input-group header-input">
                     <span class="input-group-addon" id="input-location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-                    <input type="text" class="form-control" placeholder="Location" aria-describedby="input-location">
+                    <input type="text" id="search-location" class="form-control" placeholder="Location" aria-describedby="input-location">
                 </div><!-- /#input-location -->
                 <div class="input-group header-input">
                     <span class="input-group-addon" id="input-date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
-                    <input type="text" class="form-control" placeholder="Date (optional)" aria-describedby="input-date">
+                    <input type="text" id="search-date" class="form-control" placeholder="Date (optional)" aria-describedby="input-date">
                 </div><!-- /#input-date -->
-                <input class="btn btn-default" type="submit" value="Submit">
+                <input id="search-submit" class="btn btn-default" type="submit" value="Submit">
             </div><!-- /.col-md-4 -->
             
         </div><!-- /#header -->
@@ -52,9 +52,9 @@
 
             <div id="content" class="row text-center">
                 <div id="content-title">
-                    <h2 class="title-location">Green Bay, Wisconsin, USA</h2>
-                    <h4 class="title-coordinates">44.519159, -88.019826</h4>
-                    <h4 class="title-date">March 19, 2017</h4>
+                    <h2 id="title-location"></h2>
+                    <h4 id="title-coordinates"></h4>
+                    <h4 id="title-date"></h4>
                 </div><!-- /#content-title -->
                 
                 <div id="content-generated">
@@ -106,6 +106,15 @@
                 <p>Daylength Calculator is adapted from <a href="http://sunrise-sunset.org/" target="_blank">sunrise-sunset.org</a> and uses <a href="http://sunrise-sunset.org/api" target="_blank">that API</a>. Check it out, it's awesome!</p>
             </div><!-- /#footer -->
         </div><!-- /.container -->
+
+        <!-- Google Places API -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm-G_KdeJ-KbdH3_OMW6-kMQxhAie5TgA&libraries=places" async defer></script>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- custom scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
 
     </body>
 </html>
