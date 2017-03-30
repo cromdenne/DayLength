@@ -78,28 +78,29 @@
                         </div><!-- /.col-md-4 -->
                     </div><!-- /.row -->
                     <div id="content-forecast">
-                        <div class="row forecast-block">
-                            <table class="forecast">
-                              <tr>
-                                <td class="forecast-block-date">3/12/17</td>
-                                <td class="forecast-block-details">Sunday</td> 
-                                <td class="forecast-block-details"><img src="images/sunrise-crop.png" alt="sunrise icon" height="25px"> 6:54:41 AM</td>
-                                <td class="forecast-block-details"><img src="images/sun-crop.png" alt="sunrise icon" height="25px"> 12:09:38</td>
-                                <td class="forecast-block-details"><img src="images/sunset-crop.png" alt="sunrise icon" height="25px"> 7:04:19 PM</td>
-                              </tr>
-                            </table><!-- /.forecast -->
-                        </div><!-- /.forecast-block -->
-                        <div class="row forecast-block">
-                            <table class="forecast">
-                              <tr>
-                                <td class="forecast-block-date-unique">3/12/17</td>
-                                <td class="forecast-block-details-unique">Sunday</td> 
-                                <td class="forecast-block-details-unique"><img src="images/sunrise-crop.png" alt="sunrise icon" height="25px"> 6:54:41 AM</td>
-                                <td class="forecast-block-details-unique"><img src="images/sun-crop.png" alt="sunrise icon" height="25px"> 12:09:38</td>
-                                <td class="forecast-block-details-unique"><img src="images/sunset-crop.png" alt="sunrise icon" height="25px"> 7:04:19 PM</td>
-                              </tr>
-                            </table><!-- /.forecast -->
-                        </div><!-- /.forecast-block -->
+                        <table>
+                          <tr class="forecast">
+                            <td id="forecast-before-date" class="forecast-block-date"></td>
+                            <td id="forecast-before-day" class="forecast-block-details"></td> 
+                            <td class="forecast-block-details"><img src="images/sunrise-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-before-sunrise"></span></td>
+                            <td class="forecast-block-details"><img src="images/sun-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-before-daylength"></span></td>
+                            <td class="forecast-block-details"><img src="images/sunset-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-before-sunset"></span></td>
+                          </tr>
+                          <tr class="forecast">
+                            <td id="forecast-current-date" class="forecast-block-date-unique"></td>
+                            <td id="forecast-current-day" class="forecast-block-details-unique"></td> 
+                            <td class="forecast-block-details-unique"><img src="images/sunrise-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-current-sunrise"></span></td>
+                            <td class="forecast-block-details-unique"><img src="images/sun-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-current-daylength"></span></td>
+                            <td class="forecast-block-details-unique"><img src="images/sunset-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-current-sunset"></span></td>
+                          </tr>
+                          <tr class="forecast">
+                            <td id="forecast-after-date" class="forecast-block-date"></td>
+                            <td id="forecast-after-day" class="forecast-block-details"></td> 
+                            <td class="forecast-block-details"><img src="images/sunrise-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-after-sunrise"></span></td>
+                            <td class="forecast-block-details"><img src="images/sun-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-after-daylength"></span></td>
+                            <td class="forecast-block-details"><img src="images/sunset-crop.png" alt="sunrise icon" height="25px"> <span id="forecast-after-sunset"></span></td>
+                          </tr>
+                        </table>
                     </div><!-- /#content-forecast -->
                 </div><!-- /#content-generated -->
             </div><!-- /#content -->
