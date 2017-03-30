@@ -17,7 +17,6 @@ a {  }
 	background: -webkit-linear-gradient(#19488f, #d44c64);
 	background: linear-gradient(#19488f, #d44c64);
 	min-height: 500px;
-	color: #e3e9f2;
 }
 
 #header-title {
@@ -25,6 +24,7 @@ a {  }
 	padding-top: 200px;
 	font-family: 'Codystar', cursive;
 	font-size: 28px;
+	color: #e3e9f2;;
 } @media (min-width: 600px) {
 	#header-title {
 		font-size: 36px;
