@@ -131,7 +131,7 @@ $("#search-submit").click(function(){
 		// prep API URL
 		var latitude = coordinates.lat();
 		var longitude = coordinates.lng();
-		var query = "http://api.sunrise-sunset.org/json?lat=" + latitude 
+		var query = "https://api.sunrise-sunset.org/json?lat=" + latitude 
 					+ "&lng=" + longitude 
 					+ "&date=" + date.toLocaleDateString() 
 					+ "&formatted=0&callback=APIcallbackMain";
@@ -144,7 +144,7 @@ $("#search-submit").click(function(){
 		});
 
 		// prep and call API URL for trend data past
-		var trendPast = "http://api.sunrise-sunset.org/json?lat=" + latitude 
+		var trendPast = "https://api.sunrise-sunset.org/json?lat=" + latitude 
 					+ "&lng=" + longitude 
 					+ "&date=-7 day " + date.toLocaleDateString() 
 					+ "&formatted=0&callback=APIcallbackTrendPast";
@@ -155,7 +155,7 @@ $("#search-submit").click(function(){
 		});
 
 		// prep and call API URL for trend data future
-		var trendFuture = "http://api.sunrise-sunset.org/json?lat=" + latitude 
+		var trendFuture = "https://api.sunrise-sunset.org/json?lat=" + latitude 
 					+ "&lng=" + longitude 
 					+ "&date=+7 day " + date.toLocaleDateString() 
 					+ "&formatted=0&callback=APIcallbackTrendFuture";
