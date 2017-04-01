@@ -65,8 +65,8 @@ APIcallbackMain = function(data) {
 		$("#forecast-current-daylength").text(daylength);
 		$("#forecast-current-sunset").text(noSpace(sunset.toLocaleTimeString()));
 	}
-	$("#content-generated").toggle();
-	$("#footer").toggle();
+	$("#content-generated").show();
+	$("#footer").show();
 };
 
 // callback from sunrise-sunset API for trend data past
@@ -108,7 +108,10 @@ APIcallbackTrendFuture = function(data) {
 // handle submission of location and date
 $("#search-submit").click(function(){
 	if($("#search-location").val() != "") {
-		
+		//temporarily hide content while populating
+		$("#content-generated").hide();
+		$("#footer").hide();
+
 		// set important data
 		var place = autocomplete.getPlace();
 		var address = place.formatted_address;
