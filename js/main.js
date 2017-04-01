@@ -46,7 +46,7 @@ noSpace = function (time) {
 // callback from sunrise-sunset API for main data
 APIcallbackMain = function(data) {
 	var status = data.status;
-	console.log("sunrise-sunset.org API call status main: " + status);
+	//console.log("sunrise-sunset.org API call status main: " + status);
 
 	if (status == "OK") {
 		var sunrise = new Date(data.results.sunrise);
@@ -72,7 +72,7 @@ APIcallbackMain = function(data) {
 // callback from sunrise-sunset API for trend data past
 APIcallbackTrendPast = function(data) {
 	var status = data.status;
-	console.log("sunrise-sunset.org API call status trend past: " + status);
+	//console.log("sunrise-sunset.org API call status trend past: " + status);
 
 	if (status == "OK") {
 		var sunrise = new Date(data.results.sunrise);
@@ -90,7 +90,7 @@ APIcallbackTrendPast = function(data) {
 // callback from sunrise-sunset API for trend data future
 APIcallbackTrendFuture = function(data) {
 	var status = data.status;
-	console.log("sunrise-sunset.org API call status trend future: " + status);
+	//console.log("sunrise-sunset.org API call status trend future: " + status);
 
 	if (status == "OK") {
 		var sunrise = new Date(data.results.sunrise);
